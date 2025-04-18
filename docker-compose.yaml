@@ -8,6 +8,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
+    volumes:
+      - hostPath:containerPath:ro
 
   mongo-express:
     image: mongo-express
